@@ -1,0 +1,4 @@
+name: ThrowableTorch
+version: '${version}'
+main: com.github.heavyrisem.throwable_torch.Throwable_torch
+api-version: 1.19
