@@ -29,7 +29,7 @@ public class ArrowEventListener extends EventListener {
                     Block nearBlock = hitBlock.getRelative(hitBlockFace);
 
 
-                    if (hitBlock.getType().isSolid() && nearBlock.getType().isAir()) {
+                    if (hitBlock.getType().isSolid() && nearBlock.getType().isAir() && !hitBlockFace.equals(BlockFace.DOWN)) {
                         if (hitBlockFace.equals(BlockFace.UP)) {
                             nearBlock.setType(Material.TORCH);
                         } else {

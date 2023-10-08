@@ -22,7 +22,7 @@ public class ThrowEventListener extends EventListener {
             itemStack.setAmount(itemStack.getAmount() - 1);
 
             Arrow arrow = player.launchProjectile(Arrow.class);
-            arrow.setDamage(2);
+            arrow.setDamage(0.2);
             arrow.setPickupStatus(AbstractArrow.PickupStatus.DISALLOWED);
             arrow.setVelocity(player.getLocation().getDirection().multiply(5));
             arrow.setGlowing(true);
